@@ -1,8 +1,9 @@
 function Services() {
   return (
+    <>
     <div className="max-w-xl mx-auto prose prose-blue">
       <h2>E-Commerce Services</h2>
-      <p>
+ 
         Are you looking for a reliable and hassle-free way to sell custom
         products online? Look no further! We've got you covered with our
         e-commerce app that uses Snip Cart and Printful to create and sell your
@@ -11,7 +12,7 @@ function Services() {
         products you want to sell, upload your designs, and Printful takes care
         of the rest. Your products are printed on demand, and shipped directly
         to your customers under your brand name. 
-        </p><p>
+        
         This means that you don't have
         to worry about inventory management, order processing, or shipping
         logistics. It's all taken care of for you! And the best part? Printful
@@ -23,8 +24,7 @@ function Services() {
         lightning-fast, flexible, and works on all devices. Plus, it supports
         multiple payment gateways, so your customers can pay using their
         preferred method. 
-        </p>
-        <p>
+        
         From credit cards to PayPal, Snip Cart has got you
         covered. With Snip Cart, you can customize your store to match your
         brand and style. Add product descriptions, images, and prices, and start
@@ -36,8 +36,9 @@ function Services() {
         And with our expertise in web development, we can customize your app to
         fit your unique needs and goals. So why wait? Let us help you sell your
         products online today! Contact us to get started.
-      </p>
+    
     </div>
+    </>
   );
 }
 
