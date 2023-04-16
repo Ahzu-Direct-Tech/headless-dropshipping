@@ -1,11 +1,11 @@
 const description =
-  "Launch your own fully automated store with Snipcart, Printful, and Next.js";
-const title = "Your SWAG store";
-const url = "https://swag.nextdropshippingstarter.com";
+  "Headless E-Commerce theme by Ahzu Direct Tech, LLC";
+const title = "E-Com";
+const url = "https://ahzudirect.com/themes/ahzushop";
 
 const seo = {
   title,
-  titleTemplate: "%s | Headless Dropshipping Starter",
+  titleTemplate: "%s | AhzuShop Starter Theme",
   description,
   openGraph: {
     description,
@@ -14,8 +14,8 @@ const seo = {
     url,
   },
   twitter: {
-    handle: "@notrab",
-    site: "@notrab",
+    handle: "@ahzudirecttech",
+    site: "@ahzudirecttech",
   },
 };
 
