@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Section1() {
   return (
-    <div className="container-fluid bg-slate-400 py-12 h-screen md:h-full">
+    <div className="container-fluid bg-slate-400 py-12 h-auto">
         <div className="max-w-7xl mx-auto px-6">
             <div className="flex flex-col-reverse md:flex-row">
             <div className="w-auto md:w-1/2 text-4xl font-semibold font-serif">
