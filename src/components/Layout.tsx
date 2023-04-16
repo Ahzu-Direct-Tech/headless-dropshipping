@@ -1,172 +1,15 @@
 import Link from "next/link";
 import Image from "next/image";
-
 import useWishlistState from "../hooks/useWishlistState";
 import useSnipcartCount from "../hooks/useSnipcartCount";
 
-const company = [
-  {
-    id: "1",
-    title: "About Us",
-    url: "https://ahzudirecttech.com/company/about-us",
-  },
-  {
-    id: "2",
-    title: "Projects",
-    url: "https://ahzudirecttech.com/company/projects",
-  },
-  {
-    id: "3",
-    title: "Portfolio",
-    url: "https://ahzudirecttech.com/company/portfolio",
-  },
-  {
-    id: "4",
-    title: "Case Studies",
-    url: "https://ahzudirecttech.com/company/case-studies",
-  },
-  {
-    id: "5",
-    title: "Tutorials",
-    url: "https://ahzudirecttech.com/company/tutorials",
-  },
-  {
-    id: "6",
-    title: "Blog",
-    url: "https://ahzudirecttech.com/blog",
-  },
-];
-
-const products = [
-  {
-    id: "1",
-    title: "Clothing",
-    url: "/products/clothing",
-  },
-  {
-    id: "2",
-    title: "Foot Wear",
-    url: "/products/foot-wear",
-  },
-  {
-    id: "3",
-    title: "Electronics",
-    url: "/products/electronics",
-  },
-  {
-    id: "4",
-    title: "Downloads",
-    url: "/products/downloads",
-  },
-];
-
-const services = [
-  {
-    id: "1",
-    title: "UI/UX Design",
-    url: "",
-  },
-  {
-    id: "2",
-    title: "Web Administration",
-    url: "/services/web-administration",
-  },
-  {
-    id: "3",
-    title: "App Development",
-    url: "/services/app-development",
-  },
-  {
-    id: "4",
-    title: "Deploments",
-    url: "/services/deployments",
-  },
-];
-
-const follow = [
-  {
-    id: "1",
-    title: "Twitter",
-    url: "https://twitter.com/ahzudirecttech",
-    target: "_blank",
-  },
-  {
-    id: "2",
-    title: "Facebook",
-    url: "https://facebook.com/ahzudirecttech",
-  },
-  {
-    id: "3",
-    title: "Instagram",
-    url: "https://instragram.com/ahzu_direct_tech_llc",
-  },
-  {
-    id: "4",
-    title: "YouTube",
-    url: "https://www.youtube.com/channel/UCfdIQnFFeUQGvdKV6Jhtijg",
-  },
-];
-
-const technologies = [
-  {
-    id: "1",
-    title: "Next JS",
-    url: "",
-  },
-  {
-    id: "2",
-    title: "React",
-    url: "",
-  },
-  {
-    id: "3",
-    title: "Tailwind",
-    url: "",
-  },
-  {
-    id: "4",
-    title: "Bootstrap",
-    url: "",
-  },
-  {
-    id: "5",
-    title: "Node JS",
-    url: "",
-  },
-  {
-    id: "6",
-    title: "Mongo DB",
-    url: "",
-  },
-];
-
-const community = [
-  {
-    id: "1",
-    title: "GitHub",
-    url: "https://github.com/Ahzu-Direct-Tech",
-  },
-  {
-    id: "2",
-    title: "Open Collective",
-    url: "https://opencollective.com/ahzu-direct-tech-llc",
-  },
-  {
-    id: "3",
-    title: "Facebook Group",
-    url: "https://facebook.com/groups/ahzudirecttech",
-  },
-  {
-    id: "4",
-    title: "Documentation",
-    url: "https://docs.ahzudirecttech.com",
-  },
-];
 
 const Layout = ({ children }) => {
   const { hasItems } = useWishlistState();
   const { cart } = useSnipcartCount();
   const cartHasItems = cart.items.count !== 0;
+
+
 
   return (
     <>
@@ -174,12 +17,13 @@ const Layout = ({ children }) => {
         <div className="max-w-7xl mx-auto px-3">
           <div className="flex items-center justify-between">
             <div className="md:w-1/3">
-              <Link href="/">
+              <Link href="#">
                   <div className="flex items-center text-gray-900">
                     <div className="rounded-full w-12 h-12 flex items-center justify-center mr-4">
                       <Image src={"https://www.ahzudirecttech.com/adt-logo.svg"}
                       width={32}
-                      height={32}>
+                      height={32}
+                      alt="logo">
                       </Image>
                     </div>
                   </div>
@@ -256,87 +100,7 @@ const Layout = ({ children }) => {
         <div className="mx-auto">{children}</div>
       </main>
       <footer className="container-fluid">
-      <div className="container-fluid bg-black ">
-        <div className="max-w-7xl mx-auto px-6">
-        <div className="text-white justify-between mx-auto mb-6 py-32 grid grid-cols-2 gap-12 md:grid-cols-3 lg:grid-cols-6 xs:grid-cols-2">
-          <div className="text-white">
-            <div className="text-xl mb-2">Company</div>
-            {company.map((item) => (
-            <Link key={item.id} href={item.url}>
-              <div className="my-1">
-                <p className="text-sm text-white hover:underline cursor-pointer">{item.title}</p>
-              </div>
-            </Link>
-          ))}
-          </div>
-          <div className="text-white mb-2">
-            <div className="text-white font-semibold text-start text-xl mb-2">Products</div>
-            {products.map((item) => (
-            <Link key={item.id} href={item.url} >
-              <div className="my-1">
-                <p className="text-sm text-white hover:underline cursor-pointer">{item.title}</p>
-              </div>
-            </Link>
-          ))}
-          </div>
-          <div className="text-white mb-2">
-            <div className="text-white font-semibold text-start text-xl">Services</div>
-            {services.map((item) => (
-            <Link key={item.id} href={item.url} >
-              <div className="my-1">
-                <p className="text-sm text-white hover:underline cursor-pointer">{item.title}</p>
-              </div>
-            </Link>
-          ))}
-          </div>
-          <div className="text-white mb-2">
-            <div className="text-white font-semibold text-start text-xl">Technologies</div>
-            {technologies.map((item) => (
-            <Link key={item.id} href={item.url} >
-              <div className="my-1">
-                <p className="text-sm text-white hover:underline cursor-pointer" >{item.title}</p>
-              </div>
-            </Link>
-          ))}
-          </div>
-          <div className="text-white mb-2">
-            <div className="text-white font-semibold text-start text-xl">Community</div>
-            {community.map((item) => (
-            <a key={item.id} href={item.url} target={`_blank`}>
-              <div className="my-1">
-                <p className="text-sm text-white hover:underline cursor-pointer">{item.title}</p>
-              </div>
-            </a>
-          ))}
-          </div>
-
-          <div className="text-white mb-2">
-            <div className="text-white font-semibold text-start text-xl">Follow Us</div>
-            {follow.map((item) => (
-            <a key={item.id} href={item.url} target="_blank">
-              <div className="my-1">
-                <p className="text-sm text-white hover:underline cursor-pointer">{item.title}</p>
-              </div>
-            </a>
-          ))}
-          </div>
-        </div>
-        <div className="max-w-7xl mx-auto">
-        <div className="flex flex-row justify-between py-10 mx-auto gap-6 bg-black text-white ">
-          <div className="text-xs mb-3">&copy; 2023 AHZU DIRECT TECH LLC</div>
-          <div className="text-xs ">
-            Designed <span className="text-red-600 text-lg"> ❤️ </span> by {" "}
-            <a
-              className=" text-white hover:underline "
-              href="https://github.com/ahzu" target={`_blank`}
-            >
-              Ahzu
-            </a>
-          </div>
-        </div>
-      </div>
-      </div>
-      </div>
+      The footer goes here
       </footer>
     </>
   );
