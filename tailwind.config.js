@@ -9,6 +9,11 @@ module.exports = {
         sans: ["Inter", ...defaultTheme.fontFamily.sans],
       },
     },
+    theme: {
+      minHeight: {
+        '1/2': '50%',
+      }
+    }
   },
   variants: {
     extend: {
