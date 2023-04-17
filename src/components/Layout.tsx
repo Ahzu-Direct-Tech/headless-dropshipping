@@ -2,6 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import useWishlistState from "../hooks/useWishlistState";
 import useSnipcartCount from "../hooks/useSnipcartCount";
+import Footer from "./Footer";
 
 
 const Layout = ({ children }) => {
@@ -19,7 +20,7 @@ const Layout = ({ children }) => {
             <div className="md:w-1/3">
               <Link href="#">
                   <div className="flex items-center text-gray-900">
-                    <div className="rounded-full w-12 h-12 flex items-center justify-center mr-4">
+                    <div className="rounded-full w-12 h-12 flex items-center justify-center mr-4 cursor-pointer">
                       <Image src={"https://www.ahzudirecttech.com/adt-logo.svg"}
                       width={32}
                       height={32}
@@ -32,12 +33,12 @@ const Layout = ({ children }) => {
             <div className="flex-1 flex items-center justify-center">
               <nav className="flex items-center justify-start space-x-3 md:space-x-6">
               <Link href="/products">
-                    <div className="text-white hover:text-blue-600 p-1 transition">
+                    <div className="text-white hover:text-blue-600 p-1 transition cursor-pointer">
                       Products
                     </div>
                   </Link>
                   <Link href="/services">
-                    <div className="text-white hover:text-blue-600 p-1 transition">
+                    <div className="text-white hover:text-blue-600 p-1 transition cursor-pointer">
                       Services
                     </div>
                   </Link>
@@ -99,8 +100,8 @@ const Layout = ({ children }) => {
       <main className="min-h-screen">
         <div className="mx-auto">{children}</div>
       </main>
-      <footer className="container-fluid">
-      The footer goes here
+      <footer className="container-fluid bg-black">
+        <Footer />
       </footer>
     </>
   );

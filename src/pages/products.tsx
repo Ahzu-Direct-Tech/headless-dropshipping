@@ -15,9 +15,9 @@ type ProductsProps = {
 
 const Products: React.FC<ProductsProps> = ({ products }) => (
   <>
-  <div className="mb-12"><Section1 /></div>
+  
    
-    <div className="max-w-7xl mx-auto px-6 mb-12"><ProductGrid products={products} /></div>
+    <div className="max-w-7xl mx-auto px-6 mb-12 mt-12"><ProductGrid products={products} /></div>
     
   </>
 );
