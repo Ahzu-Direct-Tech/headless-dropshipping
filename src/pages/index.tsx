@@ -1,4 +1,5 @@
 import Section1 from "../components/home/section-1";
+import Image from "next/image";
 
 function HomePage() {
   return (
@@ -8,8 +9,8 @@ function HomePage() {
       </div>
 
       <div className="max-w-7xl px-6 mx-auto prose prose-blue mb-12">
-        <div className="flex flex-col md:flex-row gap-8 my-2 h-full py-[5rem] justify-center items-center">
-          <div className="w-full md:w-1/2 justify-center items-center align-middle">
+        <div className="flex flex-col md:flex-row gap-8 my-2 h-full py-[5rem] justify-between items-center">
+          <div className="w-full md:w-1/2 justify-between items-center align-middle">
             <div className="text-3xl">Sell Custom Products Hassle-Free with Our E-Commerce App</div>
             <p>
               Sell custom products hassle-free with our e-commerce app. Use Snip
@@ -21,10 +22,23 @@ function HomePage() {
               Get Started
             </button>
           </div>
-          <div className="w-full md:w-1/2 justify-center items-center align-middle"></div>
+          <div className="">
+          <Image src={"https://www.ahzudirecttech.com/adt-logo.svg"}
+                      width={400}
+                      height={400}
+                      alt="logo">
+                      </Image>
+          </div>
         </div>
-        <div className="flex flex-col md:flex-row gap-8 my-2 h-full py-[5rem] justify-center items-center">
-          <div className="w-full md:w-1/2 "></div>
+
+        <div className="flex flex-col md:flex-row gap-8 my-2 h-full py-[5rem] justify-between items-center">
+          <div className="">
+          <Image src={"https://www.ahzudirecttech.com/adt-logo.svg"}
+                      width={400}
+                      height={400}
+                      alt="logo">
+                      </Image>
+          </div>
           <div className="w-full md:w-1/2">
             <div className="text-3xl">Effortless E-commerce with Printful and Snip Cart</div>
             <p>

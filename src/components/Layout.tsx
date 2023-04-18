@@ -27,19 +27,20 @@ const Layout = ({ children }) => {
                       alt="logo">
                       </Image>
                     </div>
-                    <Link href={"/"}>Ahzu Direct Tech</Link>
+                    <div className="text-white  hover:bg-[#161616] hover:shadow-sm px-3 py-1 rounded-md"><Link href={"/"}>ADT Shop</Link></div>
+                    
                   </div>
                 </Link>
             </div>
-            <div className="flex-1 flex items-center justify-start hidden md:block">
+            <div className="flex-1 items-center justify-start hidden md:block">
               <nav className="flex items-center justify-start space-x-3 md:space-x-6">
               <Link href="/products">
-                    <div className="text-white hover:text-blue-600 p-1 transition cursor-pointer">
+                    <div className="text-white font-serif hover:text-slate-50 p-1 transition cursor-pointer hover:bg-[#161616] px-3 py-1 rounded-md">
                       Products
                     </div>
                   </Link>
                   <Link href="/services">
-                    <div className="text-white hover:text- p-1 transition cursor-pointer">
+                    <div className="text-white font-serif hover:text-slate-50 p-1 transition cursor-pointer hover:bg-[#161616] px-3 py-1 rounded-md">
                       Services
                     </div>
                   </Link>
@@ -48,7 +49,7 @@ const Layout = ({ children }) => {
             </div>
             <div className="md:w-1/3 flex items-center justify-end space-x-3 -mr-2.5">
               <button
-                className="snipcart-customer-signin appearance-none px-2 text-white hover:text-blue-600 rounded-md cursor-pointer focus:outline-none focus:text-blue-600 transition relative"
+                className="snipcart-customer-signin appearance-none px-2 text-white hover:text-slate-400 cursor-pointer focus:outline-none focus:text-slate-400 transition relative p-2 rounded-full hover:bg-[#161616] border-1 border-slate-50"
                 aria-label="User login"
               >
                 <svg
@@ -62,11 +63,11 @@ const Layout = ({ children }) => {
               </button>
               <Link href="/wishlist">
                 <div
-                  className="px-2 text-white hover:text-blue-600 rounded-md cursor-pointer focus:outline-none focus:text-blue-600 relative transition"
+                  className="px-2 text-white cursor-pointer focus:outline-none focus:text-slate-400 relative transition hover:bg-[#161616] rounded-full p-2"
                   aria-label="Wishlist"
                 >
                   {hasItems && (
-                    <div className="absolute bg-red-500 rounded-full w-2 h-2 top-0 right-0 -mt-1 -mr-1"></div>
+                    <div className="absolute bg-red-500 rounded-full w-2 h-2 top-2 right-2 -mt-1 -mr-1"></div>
                   )}
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -79,11 +80,11 @@ const Layout = ({ children }) => {
                 </div>
               </Link>
               <button
-                className="snipcart-checkout appearance-none px-2 text-white hover:text-blue-600 rounded-md cursor-pointer focus:outline-none focus:text-blue-600 transition relative"
+                className="snipcart-checkout appearance-none px-2 text-white cursor-pointer focus:outline-none focus:text-slate-400 transition relative hover:bg-[#161616] rounded-full p-2"
                 aria-label="Cart"
               >
                 {cartHasItems && (
-                  <span className="absolute bg-lime-600 rounded-full w-2 h-2 top-0 right-0 -mt-1 -mr-1 "></span>
+                  <span className="absolute bg-lime-600 rounded-full w-2 h-2 top-2 right-2 -mt-1 -mr-1 "></span>
                 )}
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
