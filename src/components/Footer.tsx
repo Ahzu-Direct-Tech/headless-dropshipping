@@ -35,10 +35,10 @@ export default function Footer () {
                 
                 <div className="flex flex-col text-sm font-normal gap-2">
                     <Link href={"/"}>UI/UX Design</Link>
-                    <Link href={"/"}>Web Administration</Link>
+                    <Link href={"https://www.ahzudirecttech.com/services/web-administration"}>Web Administration</Link>
                     <Link href={"/"}>Digital Marketing</Link>
-                    <Link href={"/"}>App Development</Link>
-                    <Link href={"/"}>Deployments</Link>
+                    <Link href={"https://www.ahzudirecttech.com/services/app-development"}>App Development</Link>
+                    <Link href={"https://www.ahzudirecttech.com/services/deployments"}>Deployments</Link>
                    
                 </div>
                 </div>

@@ -18,8 +18,8 @@ const Layout = ({ children }) => {
         <div className="max-w-7xl mx-auto px-3">
           <div className="flex items-center justify-between">
             <div className="md:w-1/3">
-              <Link href="#">
-                  <div className="flex items-center text-gray-900">
+              <Link href="/">
+                  <div className="flex items-center text-white  font-serif">
                     <div className="rounded-full w-12 h-12 flex items-center justify-center mr-4 cursor-pointer">
                       <Image src={"https://www.ahzudirecttech.com/adt-logo.svg"}
                       width={32}
@@ -27,10 +27,11 @@ const Layout = ({ children }) => {
                       alt="logo">
                       </Image>
                     </div>
+                    <Link href={"/"}>Ahzu Direct Tech</Link>
                   </div>
                 </Link>
             </div>
-            <div className="flex-1 flex items-center justify-center">
+            <div className="flex-1 flex items-center justify-start hidden md:block">
               <nav className="flex items-center justify-start space-x-3 md:space-x-6">
               <Link href="/products">
                     <div className="text-white hover:text-blue-600 p-1 transition cursor-pointer">
@@ -38,7 +39,7 @@ const Layout = ({ children }) => {
                     </div>
                   </Link>
                   <Link href="/services">
-                    <div className="text-white hover:text-blue-600 p-1 transition cursor-pointer">
+                    <div className="text-white hover:text- p-1 transition cursor-pointer">
                       Services
                     </div>
                   </Link>
